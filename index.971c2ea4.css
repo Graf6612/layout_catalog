@@ -1,0 +1,243 @@
+.card {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  width: 200px;
+  padding: 32px 16px 16px;
+  overflow: hidden;
+}
+
+.card__images {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card__image {
+  vertical-align: top;
+  width: 160px;
+  height: 134px;
+}
+
+.card__title {
+  color: #060b35;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card__code {
+  color: #616070;
+  margin-bottom: 16px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card__price {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.card__prices {
+  color: #616070;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card__money {
+  color: #060b35;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.card__buy {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #00acdc;
+  border: none;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.card__buy:hover {
+  color: #00acdc;
+  background-color: #fff;
+  border: 1px solid #00acdc;
+}
+
+.card__reviev {
+  color: #060b35;
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card__stars {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+:root {
+  --main-color: #00acdc;
+  --item-color: #060b35;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  display: flex;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__nav-item {
+  color: var(--item-color);
+  text-transform: uppercase;
+  align-items: center;
+  height: 60px;
+  line-height: 14.06px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.header__nav-item:hover, .header__nav-item.is-active {
+  color: var(--main-color);
+}
+
+.is-active:after {
+  content: "";
+  background-color: var(--main-color);
+  border-radius: 8px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars {
+  width: 96px;
+  height: 16px;
+  display: flex;
+}
+
+.stars__star {
+  background-image: url("star.fa806e3c.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  display: flex;
+}
+
+.stars__star:first-child {
+  margin-left: 0;
+}
+
+.stars--0 .stars__star:first-child, .stars--0 .stars__star:nth-child(2), .stars--0 .stars__star:nth-child(3), .stars--0 .stars__star:nth-child(4) {
+  background-image: url("star-active.2be54011.svg");
+}
+
+.card {
+  width: 200px;
+  height: 408px;
+  margin-bottom: 46px;
+  margin-right: 48px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.main {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 128px 26px;
+  display: grid;
+}
+
+@media screen and (width <= 1024px) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 40px 26px;
+  }
+}
+
+@media screen and (width <= 767px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 51px 40px 26px;
+  }
+}
+
+@media screen and (width <= 487px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 51px 40px 26px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #0003;
+}
+
+.card:hover .card__title {
+  color: #34568b;
+}
+
+.card__buy:hover {
+  color: #00acdc;
+  background-color: #fff;
+}
+
+.card__buy:hover, .card__buy:visited {
+  color: #00acdc;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
